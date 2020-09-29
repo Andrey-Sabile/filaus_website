@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'App\Http\Controllers\HomeController@show');
+
+// Event ticketing end points
+Route::get('/charge', 'App\Http\Controllers\ChargeController@create');
+Route::get('/charge/success', 'App\Http\Controllers\ChargeController@success');
+Route::post('/charge', 'App\Http\Controllers\ChargeController@store');
