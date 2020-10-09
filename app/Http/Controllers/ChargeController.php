@@ -47,8 +47,8 @@ class ChargeController extends Controller
             'payment_method_types' => ['card'],
             'mode' => 'payment',
             'allow_promotion_codes' => true,
-            'success_url' => 'http://127.0.0.1:8000/charge/success',
-            'cancel_url' => 'http://127.0.0.1:8000/charge',
+            'success_url' => 'https://www.filausuwa.live/charge/success',
+            'cancel_url' => 'https://www.filausuwa.live/charge',
             'line_items' => [
                 [
                     'quantity' => 1,
